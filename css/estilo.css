@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/*Navegación*/
+
+.nav-link {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #D6BD9A;
+}
+
+.logo {
+    background-image: url(../imagenes/logotablet.png);
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 120.72px;
+    text-indent: -99999px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+}
+
+.navbar-toggler {
+    background-color: black;
+    margin-top: 0.6rem;
+    margin-right: 0.3rem;
+}
+
+
+/* Portadas */
+
+#portada {
+    background-image: url(../imagenes/portadaHome.png);
+    height: 35rem;
+}
+
+/* Parrafos sobre las portadas de cada Html */
+
+#portada p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 15rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#portada p span {
+    color: #D6BD9A;
+}
+
+.boton_menu {
+    position: absolute;
+    top: 19.5rem;
+    background-color: #b39975;
+    width: 9rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+}
+
+.boton_menu:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo general para enlaces y titulos */
+
+a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+/* Html Index */
+
+#home_nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#home_nosotros-texto {
+    width: 50%;
+    justify-items: center;
+    margin: 10% 7% 5% 3%;
+}
+
+#home_nosotros-img img {
+    width: 93%;
+    margin-left: 7%;
+}
+
+#home_nosotros-texto a {
+    width: 9rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #b39975;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#home_nosotros-texto a:hover {
+    background-color: black;
+}
+
+#video video {
+    margin-top: 5%;
+}
+
+#home_productos {
+    margin: 7% 1.3rem 12% 1.3rem;
+}
+
+.home_productos-texto {
+    text-align: center;
+    margin: 0% 20%;
+}
+
+.home_productos-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.home_productos-productos h3 {
+    text-align: center;
+}
+
+.home_productos-productos img {
+    border-radius: 10%;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+    margin-bottom: 10%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.home_productos-productos img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.boton_producto {
+    position: absolute;
+    top: 120 rem;
+    background-color: #b39975;
+    width: 9rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+}
+
+.boton_producto:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.galeria {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.galeria img {
+    width: 25%;
+}
+
+/* Media query */
+
+@media screen and (max-width: 768px) {
+    #home_nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #home_nosotros-img img {
+        width: 93%;
+        margin-left: 7%;
+    }
+
+    #home_nosotros-texto {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .home_productos-productos article {
+        margin: 0% 5%;
+    }
+
+    .home_productos-productos {
+        margin: 3%;
+    }
+
+    .home_productos-productos h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #portada p {
+        font-size: 2rem;
+    }
+
+    .logo {
+        background-image: url(../imagenes/logocelular.png);
+        top: 1.2rem;
+    }
+
+    .boton_menu {
+        top: 18.5rem;
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    .home_productos-texto {
+        margin: 0% 5% 7% 5%
+    }
+
+    .home_productos-productos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .home_productos-productos img {
+        width: 60%;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .home_productos-productos h3 {
+        font-size: 1.2rem;
+    }
+
+    .boton_producto {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
