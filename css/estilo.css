@@ -43,14 +43,46 @@ html {
     margin-right: 0.3rem;
 }
 
-/* Portadas */
+/* Estilo general para enlaces y titulos */
+
+a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* Html Index */
 
 #portada {
     background-image: url(../imagenes/portadaHome.png);
     height: 35rem;
 }
-
-/* Parrafos sobre las portadas de cada Html */
 
 #portada p {
     color: white;
@@ -86,31 +118,6 @@ html {
     color: white;
     text-decoration: none;
 }
-
-/* Estilo general para enlaces y titulos */
-
-a {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-weight: 400;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-
-/* Html Index */
 
 #home_nosotros {
     display: flex;
@@ -220,6 +227,179 @@ h3 {
     width: 25%;
 }
 
+/* Html Nosotros */
+
+#portada_nosotros {
+    background-image: url(../imagenes/portadoNosotros.png);
+    height: 25rem;
+}
+
+#portada_nosotros p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#portada_nosotros::before {
+    content: url(../imagenes/linea.svg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14rem;
+}
+
+#nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nosotros_img {
+    margin: 5% 5% 5% 5%;
+}
+
+#nosotros_texto {
+    margin: 5% 5% 5% 0%;
+}
+
+#nosotros_texto p {}
+
+/* Html Menú */
+
+#portada_menu {
+    background-image: url(../imagenes/portadaMenu.png);
+    height: 25rem;
+}
+
+#portada_menu p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#portada_menu::before {
+    content: url(../imagenes/linea.svg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14rem;
+}
+
+#menu_texto {
+    margin: 10% 20% 5% 20%;
+    text-align: center;
+}
+
+#menu_bg {
+    background-image: url(../imagenes/menufondo.jpg);
+    height: 40rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#menu_lista article {
+    background-color: rgba(255, 255, 255, 0.89);
+    height: 30rem;
+    width: 40%;
+    text-align: center;
+    margin-top: 10%;
+    padding: 2% 2%;
+}
+.menu1::before {
+    content: url(../imagenes/menu-salado.svg); 
+}
+
+.menu2::before {
+    content: url(../imagenes/menudulce.svg); 
+}
+
+#menu_lista article h2 {
+    font-size: 1.5rem;
+    color: #b39975;
+    margin: 1rem;
+}
+
+
+
+
+/* Html Productos */
+
+#portada_productos {
+    background-image: url(../imagenes/portadaProductos.png);
+    height: 25rem;
+}
+
+#portada_productos p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#portada_productos::before {
+    content: url(../imagenes/linea.svg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14rem;
+}
+
+/* Html Contacto */
+
+#portada_contacto {
+    background-image: url(../imagenes/portadaContacto.png);
+    height: 25rem;
+}
+
+#portada_contacto p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#portada_contacto::before {
+    content: url(../imagenes/linea.svg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14rem;
+}
+
+
+
+
 /* Footer */
 
 
@@ -228,7 +408,6 @@ footer {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .footer_logo {
@@ -251,18 +430,13 @@ footer img {
     font-weight: 500;
     font-size: 1rem;
     text-align: center;
-
-
 }
 
 .footer_redes img {
     margin: 1rem 0.5rem;
     position: relative;
     left: 2rem;
-
 }
-
-
 
 /* Media query */
 
@@ -298,11 +472,31 @@ footer img {
 }
 
 @media screen and (max-width: 576px) {
-    
+
+    #portada_nosotros p {
+        font-size: 2.3rem;
+        top: 11.5rem;
+    }
+
+    #portada_menu p {
+        font-size: 2.3rem;
+        top: 11.5rem;
+    }
+
+    #portada_productos p {
+        font-size: 2.3rem;
+        top: 11.5rem;
+    }
+
+    #portada_contacto p {
+        font-size: 2.3rem;
+        top: 11.5rem;
+    }
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     #portada p {
         font-size: 2rem;
     }
@@ -352,7 +546,7 @@ footer img {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
-    
+
     .footer_logo {
         justify-self: center;
         margin: 4rem 0rem 0rem 0rem
@@ -361,5 +555,3 @@ footer img {
     .footer_redes {
         justify-self: center;
     }
-    
-    
