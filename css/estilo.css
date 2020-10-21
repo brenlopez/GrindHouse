@@ -35,11 +35,13 @@ html {
     position: absolute;
     top: 1.4rem;
     left: 1.4rem;
+    z-index: 2;
 }
 
 .navbar-toggler {
     background-color: black;
-    margin-top: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-right: 0.3rem;
 }
 
@@ -326,12 +328,13 @@ p {
     margin-top: 10%;
     padding: 2% 2%;
 }
+
 .menu1::before {
-    content: url(../imagenes/menu-salado.svg); 
+    content: url(../imagenes/menu-salado.svg);
 }
 
 .menu2::before {
-    content: url(../imagenes/menudulce.svg); 
+    content: url(../imagenes/menudulce.svg);
 }
 
 #menu_lista article h2 {
@@ -440,6 +443,23 @@ footer img {
 
 /* Media query */
 
+@media only screen and (max-width: 992px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+    
+    .bg-transparent {
+        background-color: black !important;
+        z-index: 1;
+    }
+    .logo {
+        background-image: url(../imagenes/logobarra.svg);
+        top: 1.2rem;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     #home_nosotros {
         display: flex;
@@ -472,7 +492,7 @@ footer img {
 }
 
 @media screen and (max-width: 576px) {
-
+    
     #portada_nosotros p {
         font-size: 2.3rem;
         top: 11.5rem;
@@ -499,11 +519,6 @@ footer img {
 
     #portada p {
         font-size: 2rem;
-    }
-
-    .logo {
-        background-image: url(../imagenes/logocelular.png);
-        top: 1.2rem;
     }
 
     .boton_menu {
