@@ -45,6 +45,92 @@
         <p>Queremos escucharte</p>
    </div>
    
+    <main>
+        <div id="contacto">
+            <h1>Contactate con nosotros</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo volutpat magna, eget dignissim ante finibus sit amet. Cras enim velit, bibendum vitae tincidunt aliquam, fringilla a nunc. Donec ut nunc tortor. In nec tortor nec urna lacinia tincidunt.</p>
+        </div>
+
+        <div class="formulario">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <select class="custom-select">
+                        <option selected>Seleccionar motivos</option>
+                        <option value="1">Problemas con la compra</option>
+                        <option value="2">Franquicias</option>
+                        <option value="3">Otras consultas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Subscribirse al newsletter</label>
+                </div>
+                <br>
+                <!---<button class="btn btn-primary" type="submit">Enviar</button>---->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Enviar
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ¡Tu mensaje ha sido enviado!<br> Te responderemos dentro de las 24hs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <section id="sucursales">
+        <h2>Conocé nuestros locales</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/local1.png" alt="Cafeteria">
+                <div class="card-body">
+                    <h3 class="card-title">Belgrano</h3>
+                    <p class="card-text">Av. Cabildo 1496 - CABA <br>Lunes a Sábados 09:00 - 20:00Hs</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="imagenes/local2.png" alt="Cafeteria">
+                <div class="card-body">
+                    <h3 class="card-title">Palermo</h3>
+                    <p class="card-text">Av. Santa Fe 1287 - CABA<br>Lunes a Sábados 09:00 - 20:00Hs</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="imagenes/local3.png" alt="Cafetería">
+                <div class="card-body">
+                    <h3 class="card-title">Obelisco</h3>
+                    <p class="card-text">Av. Corrientes 1567 - CABA<br>Lunes a Sábados 09:00 - 20:00Hs</p>
+                </div>
+            </div>
+        </div>
+    </section>
    
    <footer>
         <img src="imagenes/logotablet.png" alt="logo" class="footer_logo">

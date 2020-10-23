@@ -264,13 +264,27 @@ p {
 
 #nosotros_img {
     margin: 5% 5% 5% 5%;
+    width: 40%;
 }
+
+#nosotros_img img {
+    width: 100%;
+}
+
 
 #nosotros_texto {
     margin: 5% 5% 5% 0%;
+    text-align: center;
+    width: 60%;
 }
 
-#nosotros_texto p {}
+#nosotros_texto h1 {
+    text-align: left;
+}
+
+#nosotros_texto p {
+    text-align: left;
+}
 
 /* Html Menú */
 
@@ -312,6 +326,17 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 10%;
+}
+
+.menu_bg2 {
+    background-image: url(../imagenes/menufondo2.jpg);
+    height: 35rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #menu_lista {
@@ -320,13 +345,30 @@ p {
     justify-content: space-around;
 }
 
+.menu_lista2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #menu_lista article {
     background-color: rgba(255, 255, 255, 0.89);
     height: 30rem;
     width: 40%;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 6%;
+    margin-bottom: 6%;
     padding: 2% 2%;
+}
+
+.menu_lista2 article {
+    background-color: rgba(255, 255, 255, 0.89);
+    height: 25rem;
+    width: 90%;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 2% 25%;
 }
 
 .menu1::before {
@@ -337,13 +379,21 @@ p {
     content: url(../imagenes/menudulce.svg);
 }
 
+.menu3::before {
+    content: url(../imagenes/menu-cafe.svg);
+}
+
 #menu_lista article h2 {
     font-size: 1.5rem;
     color: #b39975;
     margin: 1rem;
 }
 
-
+.menu_lista2 article h2 {
+    font-size: 1.5rem;
+    color: #b39975;
+    margin: 0.5rem;
+}
 
 
 /* Html Productos */
@@ -373,6 +423,76 @@ p {
     top: 14rem;
 }
 
+#productos_texto {
+    margin: 10% 20% 5% 20%;
+    text-align: center;
+}
+
+#productos_lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "Producto1 Medialuna"
+        "Cupcake Producto2"
+        "Producto3 Postre";
+    justify-items: center;
+}
+
+#productos h2 {
+    font-size: 1.4rem;
+}
+
+.prodTexto1 {
+    grid-area: Producto1;
+    text-align: right;
+    position: relative;
+    top: 25%;
+    margin-left: 15%;
+}
+
+.prodImg1 {
+    grid-area: Medialuna;
+    justify-self: center;
+}
+
+.prodTexto2 {
+    grid-area: Producto2;
+    position: relative;
+    top: 25%;
+    margin-right: 15%;
+}
+
+.prodImg2 {
+    grid-area: Cupcake;
+}
+
+.prodTexto3 {
+    grid-area: Producto3;
+    text-align: right;
+    position: relative;
+    top: 25%;
+    margin-left: 15%;
+}
+
+.prodImg3 {
+    grid-area: Postre;
+}
+
+#productos p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+#productos #productos_lista p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+#productos img {
+    width: 100%;
+}
+
 /* Html Contacto */
 
 #portada_contacto {
@@ -400,7 +520,66 @@ p {
     top: 14rem;
 }
 
+#contacto {
+    margin: 6rem 10% 0rem 10%;
 
+}
+
+#contacto h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+#contacto p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulario form {
+    width: 60%;
+    margin: 2rem 20%;
+}
+
+.formulario form button {
+    background-color: #b39975;
+    border: none;
+}
+
+.formulario form button:hover {
+    background-color: black;
+}
+
+#sucursales h2 {
+    text-align: center;
+    margin: 6rem 1.5rem 4rem 1.5rem;
+}
+
+#sucursales h3 {
+    text-align: center;
+    margin: 1rem;
+}
+
+#sucursales p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#sucursales {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.card-deck {
+    margin: 1rem 5% 5rem 5%;
+}
 
 
 /* Footer */
@@ -448,14 +627,30 @@ footer img {
         font-size: 1rem;
         padding: .7rem 1rem;
     }
-    
+
     .bg-transparent {
         background-color: black !important;
         z-index: 1;
     }
+
     .logo {
         background-image: url(../imagenes/logobarra.svg);
         top: 1.2rem;
+    }
+
+    #nosotros_img {
+        margin: 5% 5% 5% 5%;
+        width: 45%;
+    }
+
+    #nosotros_texto {
+        margin: 5% 5% 5% 0%;
+        text-align: center;
+        width: 55%;
+    }
+
+    #nosotros_texto p {
+        font-size: 0.9rem;
     }
 }
 
@@ -489,10 +684,79 @@ footer img {
     .home_productos-productos h3 {
         font-size: 1rem;
     }
+
+    #nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nosotros_img {
+        margin: 10% 20% 5% 20%;
+        width: 60%;
+    }
+
+    #nosotros_texto {
+        margin: 5% 10% 5% 10%;
+        text-align: center;
+        width: 80%;
+    }
+
+    #nosotros_texto h1 {
+        text-align: center;
+    }
+
+    #nosotros_texto p {
+        text-align: center;
+    }
+
+    #menu_bg {
+        height: 55rem;
+    }
+
+    #menu_lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #menu_lista article {
+        background-color: rgba(255, 255, 255, 0.89);
+        height: 23rem;
+        width: 90%;
+        text-align: center;
+        margin-top: 7%;
+        margin-bottom: 0%;
+        padding: 2% 2%;
+        margin-left: 5%;
+    }
+
+    .menu_lista2 article {
+    padding: 5% 15%;
+}
+    
+    #menu_lista article h2 {
+        font-size: 1.3rem;
+        color: #b39975;
+        margin: 0.5rem;
+    }
+
+    #productos #productos_lista p {
+        font-size: 0.95rem;
+    }
+
+    #contacto p {
+        font-size: 1rem;
+    }
+
+    .formulario form {
+        width: 90%;
+        margin: 2rem 5%;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    
+
     #portada_nosotros p {
         font-size: 2.3rem;
         top: 11.5rem;
@@ -554,6 +818,49 @@ footer img {
         padding: 0.4rem;
         margin-bottom: 2rem;
         margin-top: 1rem;
+    }
+    
+    
+    .menu_lista2 article {
+    padding: 5% 2%;
+}
+
+    #productos_lista {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+        grid-template-areas:
+            "Medialuna"
+            "Producto1"
+            "Cupcake"
+            "Producto2"
+            "Postre"
+            "Producto3";
+
+        justify-items: center;
+    }
+
+    .prodTexto1 {
+        text-align: center;
+        margin-right: 4rem;
+        top: 5%;
+    }
+
+    .prodTexto2 {
+        text-align: center;
+        margin-right: 4rem;
+        margin-left: 4rem;
+        top: 5%;
+    }
+
+    .prodTexto3 {
+        text-align: center;
+        margin-right: 4rem;
+        top: 5%;
+    }
+
+    .card-deck {
+        margin: 1rem 15% 5rem 15%;
     }
 
     footer {
