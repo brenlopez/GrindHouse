@@ -1,0 +1,106 @@
+#portada_menu {
+    background-image: url(../imagenes/portadaMenu.png);
+    height: 25rem;
+
+    p {
+        color: $blanco;
+        font-family: $portada;
+        text-align: center;
+        font-size: 2.9rem;
+        clear: left;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    &::before {
+        content: url(../imagenes/linea.svg);
+        position: absolute;
+        left: 50%;
+        transform: $centrar;
+        top: 14rem;
+    }
+}
+
+#menu_texto {
+    margin: 10% 20% 5% 20%;
+    text-align: center;
+}
+
+#menu_bg {
+    background-image: url(../imagenes/menufondo.jpg);
+    height: 40rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+}
+
+.menu_bg2 {
+    background-image: url(../imagenes/menufondo2.jpg);
+    height: 35rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    article {
+        background-color: $opacidad;
+        height: 30rem;
+        width: 40%;
+        text-align: center;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        padding: 2% 2%;
+
+        h2 {
+            font-size: 1.5rem;
+            color: $beige;
+            margin: 1rem;
+        }
+
+        .menu1::before {
+            content: url(../imagenes/menu-salado.svg);
+        }
+
+        .menu2::before {
+            content: url(../imagenes/menudulce.svg);
+        }
+    }
+}
+
+.menu_lista2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    article {
+        background-color: $opacidad;
+        height: 25rem;
+        width: 90%;
+        text-align: center;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        padding: 2% 25%;
+
+        h2 {
+            font-size: 1.5rem;
+            color: $beige;
+            margin: 0.5rem;
+        }
+
+        .menu3::before {
+            content: url(../imagenes/menu-cafe.svg);
+        }
+    }
+}

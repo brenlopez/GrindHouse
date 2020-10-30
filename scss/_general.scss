@@ -1,0 +1,49 @@
+$beige: #b39975;
+$negro: black;
+$blanco: white;
+$sombra: 0px 4px 4px rgba(0, 0, 0, 0.11);
+$titulos: 'Poppins', sans-serif;
+$portada: 'Bebas Neue', cursive;
+$parrafo: 'Raleway', sans-serif;
+$centrar: translateX(-50%);
+$opacidad:  rgba(255, 255, 255, 0.89);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+a {
+    color: $blanco;
+    font-family: $titulos;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-family: $titulos;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-family: $titulos;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: $titulos;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: $parrafo;
+    font-size: 1.1rem;
+}

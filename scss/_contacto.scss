@@ -1,0 +1,85 @@
+#portada_contacto {
+    background-image: url(../imagenes/portadaContacto.png);
+    height: 25rem;
+
+    p {
+        color: $blanco;
+        font-family: $portada;
+        text-align: center;
+        font-size: 2.9rem;
+        clear: left;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    &::before {
+        content: url(../imagenes/linea.svg);
+        position: absolute;
+        left: 50%;
+        transform: $centrar;
+        top: 14rem;
+    }
+}
+
+#contacto {
+    margin: 6rem 10% 0rem 10%;
+
+    h1 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    p {
+        font-family: $parrafo;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    form {
+        width: 60%;
+        margin: 2rem 20%;
+
+        button {
+            background-color: $beige;
+            border: none;
+        }
+
+        button:hover {
+            background-color: $negro;
+        }
+    }
+}
+
+#sucursales {
+    width: 100%;
+    margin-bottom: 10rem;
+
+    h2 {
+        text-align: center;
+        margin: 6rem 1.5rem 4rem 1.5rem;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    p {
+        font-family: $parrafo;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .card-deck {
+        margin: 1rem 5% 5rem 5%;
+    }
+}

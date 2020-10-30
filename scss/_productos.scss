@@ -1,0 +1,96 @@
+#portada_productos {
+    background-image: url(../imagenes/portadaProductos.png);
+    height: 25rem;
+
+    p {
+        color: $blanco;
+        font-family: $portada;
+        text-align: center;
+        font-size: 2.9rem;
+        clear: left;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    &::before {
+        content: url(../imagenes/linea.svg);
+        position: absolute;
+        left: 50%;
+        transform: $centrar;
+        top: 14rem;
+    }
+}
+
+#productos {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-family: $parrafo;
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #productos_texto {
+        margin: 10% 20% 5% 20%;
+        text-align: center;
+    }
+}
+
+#productos_lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "Producto1 Medialuna"
+        "Cupcake Producto2"
+        "Producto3 Postre";
+    justify-items: center;
+
+    p {
+        font-family: $parrafo;
+        font-size: 1rem;
+    }
+
+    .prodTexto1 {
+        grid-area: Producto1;
+        text-align: right;
+        position: relative;
+        top: 30%;
+        margin-left: 20%;
+    }
+
+    .prodImg1 {
+        grid-area: Medialuna;
+        justify-self: center;
+    }
+
+    .prodTexto2 {
+        grid-area: Producto2;
+        position: relative;
+        top: 30%;
+        margin-right: 20%;
+    }
+
+    .prodImg2 {
+        grid-area: Cupcake;
+    }
+
+    .prodTexto3 {
+        grid-area: Producto3;
+        text-align: right;
+        position: relative;
+        top: 30%;
+        margin-left: 20%;
+    }
+
+    .prodImg3 {
+        grid-area: Postre;
+    }
+}

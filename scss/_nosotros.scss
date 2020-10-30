@@ -1,0 +1,54 @@
+#portada_nosotros {
+    background-image: url(../imagenes/portadoNosotros.png);
+    height: 25rem;
+
+    p {
+        color: $blanco;
+        font-family: $portada;
+        text-align: center;
+        font-size: 2.9rem;
+        clear: left;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    &::before {
+        content: url(../imagenes/linea.svg);
+        position: absolute;
+        left: 50%;
+        transform: $centrar;
+        top: 14rem;
+    }
+}
+
+#nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nosotros_img {
+    margin: 5% 5% 5% 10%;
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
+}
+
+#nosotros_texto {
+    margin: 5% 10% 5% 0%;
+    text-align: center;
+    width: 60%;
+
+    h1 {
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+}
